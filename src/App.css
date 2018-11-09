@@ -1,8 +1,15 @@
 .App {
-  text-align: center;
+  background: url(https://images.pexels.com/photos/1526049/pexels-photo-1526049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat fixed top center ;
+  padding: 0%;
+    margin: 0%;
+    height: 610px;
+    -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+     background-size: 100% 100%;
+     -o-background-size: 100% 100%;
 }
 
-.App-logo {
+/*.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
@@ -29,4 +36,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
