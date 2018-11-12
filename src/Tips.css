@@ -1,0 +1,17 @@
+h3 {
+    color: white;
+    margin-left: 230px;
+}
+.sometips {
+    font-size: 20px;
+    list-style-type: circle;
+    background-color: whitesmoke;
+    height: 470px;
+    width: 900px;
+    margin-left: 200px;
+    padding: 2em;
+    color: rgb(43, 0, 128);
+    border-style: groove;
+    border-width: 7px;
+    border-color: rgb(43, 0, 128);
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import GetInspired from '../GetInspired';
 import { Link } from 'react-router-dom';
+import './navbar.css';
+import Tips from '../Tips';
 
 import {
     Collapse,
@@ -31,17 +33,23 @@ class NavBar extends React.Component {
             <GetInspired />
         )
     }
+    showTips = () => {
+        return (
+            <Tips />
+        )
+    }
 
     render() {
         return (
             <div>
                 <Navbar color="faded" light expand="md">
-                    <NavbarBrand href="/">Poetry</NavbarBrand>
+                    <NavbarBrand id="poetry"href="/">Art of Poetry</NavbarBrand>>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <Link to="/getinspired">Get Inspired</Link>
+                                <Link id="tips"to="/tips">Some Tips</Link>
+                                <Link id="poems"to="/getinspired">Get Inspired</Link>
                                 <Button onClick={() => this.props.clickLogout()}>Logout</Button>
                             </NavItem>
                         </Nav>

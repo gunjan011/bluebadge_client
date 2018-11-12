@@ -1,18 +1,19 @@
 import React from 'react';
 import { Table, Button } from 'reactstrap';
+import './Table.css';
 
 
 const PoemsTable = (props) => {
 
     return (
-        <div>
+        <div className="table">
             <h3>Composition History</h3>
             <hr />
             <Table striped>
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Id</th>
+                        {/*<th>Id</th>*/}
                         <th>Caption</th>
                         <th>Compose</th>
                         <th></th>

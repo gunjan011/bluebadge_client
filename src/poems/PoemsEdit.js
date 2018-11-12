@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import './modal.css';
 
 class PoemsEdit extends React.Component {
     constructor(props) {
@@ -28,15 +29,15 @@ class PoemsEdit extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className='modal'>
                 <Modal isOpen={true} >
                     <ModalHeader >Compose a poem</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleSubmit} >
-                            <FormGroup>
+                            {/*<FormGroup>
                                 <Label for="id">Poem Id</Label>
                                 <Input id="id" type="text" name="id" value={this.state.id} placeholder="enter Poem id" onChange={this.handleChange} />
-                            </FormGroup>
+                            </FormGroup>*/}
                             <FormGroup>
                                 <Label for="caption">Caption</Label>
                                 <Input id="caption" type="text" name="caption" value={this.state.caption} placeholder="enter a caption" onChange={this.handleChange} />

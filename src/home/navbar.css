@@ -1,0 +1,22 @@
+#poems {
+    font-size: 25px;
+    margin-right: 40px;
+    color: white;
+    }
+
+#poetry {
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+/*.desc {
+    color:white;
+    font-size:10px;
+    margin-right: 40px;
+}*/
+#tips {
+    color: white;
+    font-size: 25px;
+    margin-right: 50px;
+}

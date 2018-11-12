@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-//import {AuthContext}  from '../auth/AuthContext'
+import { Button, Form, FormGroup, Input } from 'reactstrap';
+import './Compose.css'
 
 class PoemsCompose extends Component {
     constructor(props) {
@@ -41,20 +41,20 @@ class PoemsCompose extends Component {
 
     render() {
         return (
-            <div>
-                <h3>Compose a poem</h3>
+            <div className="compose-poem">
+                <h5>Compose a poem</h5>
                 <hr />
                 <Form onSubmit={this.handleSubmit} >
-                    <FormGroup>
+                   {/* <FormGroup>
                         <Label for="id">Poem ID</Label>
                         <Input id="id" type="text" name="id" value={this.state.id} placeholder="Id" onChange={this.handleChange} />
-                    </FormGroup>
+                   </FormGroup>*/}
                     <FormGroup>
-                        <Label for="caption">Caption</Label>
+                        {/*<Label for="caption">Caption</Label>*/}
                         <Input id="caption" type="text" name="caption" value={this.state.caption} placeholder="enter caption" onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="compose">Compose</Label>
+                        {/*<Label for="compose">Compose</Label>*/}
                         <Input id="compose" type="text" name="compose" value={this.state.compose} placeholder="compose" onChange={this.handleChange} />
                     </FormGroup>
                     <Button type="submit" color="primary"> Submit </Button>

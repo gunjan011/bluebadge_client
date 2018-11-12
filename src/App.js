@@ -14,6 +14,7 @@ import PoemTwo from "./FamousPoems/PoemTwo";
 import PoemThree from "./FamousPoems/PoemThree";
 import PoemFour from "./FamousPoems/PoemFour";
 import PoemFive from "./FamousPoems/PoemFive";
+import Tips from "./Tips";
 
 class App extends Component {
 
@@ -57,6 +58,9 @@ class App extends Component {
         <Switch>
           <Route path="/" exact>
             <Auth setToken={this.setSessionState} />
+          </Route>
+          <Route path="/tips" exact>
+          <Tips />
           </Route>
           <Route path="/getinspired" exact>
             <GetInspired />

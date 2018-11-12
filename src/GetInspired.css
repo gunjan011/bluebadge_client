@@ -1,0 +1,15 @@
+.poems {
+    background-color: whitesmoke;
+    height: 400px;
+    width: 430px;
+    margin-left: 480px;
+    margin-top: 40px;
+    padding: 30px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: rgb(67, 24, 152);
+}
+.poems-list {
+    font-size: 22px;
+    list-style-type: none;
+}

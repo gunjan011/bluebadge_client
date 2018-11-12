@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Form, FormGroup, Input, Button } from 'reactstrap';
 
 class Signup extends Component {
     constructor(props) {
@@ -32,15 +32,15 @@ class Signup extends Component {
     render() {
         return (
             <div>
-                <h1>Sign Up</h1>
+                <h4>Sign Up</h4>
                 <Form onSubmit={this.handleSubmit} >
-                    <FormGroup>
-                        <Label for="username">Username</Label>
-                        <Input id="username" type="text" name="username" onChange={this.handleChange} />
+                  <FormGroup>
+                        {/*<Label for="username">Username</Label>*/}
+                        <Input id="username" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="password">Password</Label>
-                        <Input id="su_password" type="password" name="password" onChange={this.handleChange} />
+                        {/*<Label for="password">Password</Label>*/}
+                        <Input id="su_password" type="password" name="password" placeholder="Password" onChange={this.handleChange} />
                     </FormGroup>
                     <Button type="submit"> Submit </Button>
                 </Form>
