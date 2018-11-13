@@ -1,9 +1,8 @@
 .poemthree {
     background: url(https://images.unsplash.com/photo-1518545383037-bc2bb796053d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9234afd21c7ac3c59d4ac4c4f3d97824&auto=format&fit=crop&w=675&q=80) no-repeat;
     padding: 2px;
-    margin-left: 600px;
-    margin-top: -30px;
-    width: 700px;
+    margin-left: 25%;
+    width: 50vw;
     background-size: 100% 100%;
      -o-background-size: 100% 100%;
     text-align: center; 
