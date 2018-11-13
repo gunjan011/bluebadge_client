@@ -70,7 +70,7 @@ class PoemsIndex extends React.Component {
   render() {
     const poems = this.state.poems.length >= 1 ?
       <PoemsTable poems={this.state.poems}
-        delete={this.poemDelete} update={this.setUpdatedPoem} /> : <h3>Delete</h3>
+        delete={this.poemDelete} update={this.setUpdatedPoem} /> : <div></div>
     return (
       <Container>
         <Row>
