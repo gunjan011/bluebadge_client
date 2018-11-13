@@ -1,0 +1,19 @@
+.poemthree {
+    background: url(https://images.unsplash.com/photo-1518545383037-bc2bb796053d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9234afd21c7ac3c59d4ac4c4f3d97824&auto=format&fit=crop&w=675&q=80) no-repeat;
+    padding: 2px;
+    margin-left: 600px;
+    margin-top: -30px;
+    width: 700px;
+    background-size: 100% 100%;
+     -o-background-size: 100% 100%;
+    text-align: center; 
+    font-size: 20px;
+    color: rgb(12, 12, 106);
+    border-style: groove;
+    border-width: 7px;
+    border-color: rgb(8, 48, 181);
+}
+#cloud {
+    color: rgb(3, 11, 69);
+    text-shadow: 2px 2px 5px rgb(248, 250, 252);
+}

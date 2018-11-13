@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import './Poems.css';
+import './PoemThree.css';
 
 class PoemThree extends Component {
 
     render() {
         return (
-         <div className="poem">
-             <h2>I Wandered Lonely as a Cloud</h2><br></br>
+         <div className="poemthree">
+             <h2 id="cloud">I Wandered Lonely as a Cloud</h2><br></br>
              <h4>William Wordsworth</h4><br></br>
              <p>I wandered lonely as a cloud<br></br>
 That floats on high o'er vales and hills,<br></br>

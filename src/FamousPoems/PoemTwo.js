@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import './Poems.css';
+import './PoemTwo.css';
 
 class PoemTwo extends Component {
 
     render() {
         return (
-         <div className="poem">
-             <h2>A Dream Within a Dream</h2><br></br>
+         <div className="poemtwo">
+             <h2 id="dream">A Dream Within a Dream</h2><br></br>
              <h4>Edgar Allan Poe</h4><br></br>
              <p>Take this kiss upon the brow!<br></br>
           And, in parting from you now,<br></br>

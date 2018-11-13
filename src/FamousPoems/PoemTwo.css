@@ -1,0 +1,18 @@
+.poemtwo {
+    background: url(https://images.unsplash.com/photo-1496862831786-3fdc3d8747be?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9d3ff61b517c316a85eecd0b4cdd1565&auto=format&fit=crop&w=1350&q=80) no-repeat;
+    padding: 1%;
+    margin-left: 600px;
+    width: 700px;
+    background-size: 100% 100%;
+     -o-background-size: 100% 100%;
+    text-align: center; 
+    font-size: 20px;
+    color: rgb(29, 160, 147);
+    border-style: groove;
+    border-width: 7px;
+    border-color: rgb(18, 178, 196);
+}
+#dream {
+    color: rgb(5, 77, 72);
+    text-shadow: 2px 2px 5px rgb(167, 228, 235);
+}

@@ -1,0 +1,18 @@
+.poemfive {
+    background: url(https://images.unsplash.com/photo-1508677620415-3396542b95d3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db48b7d1afa4cdad0f469083ada110c3&auto=format&fit=crop&w=564&q=80) no-repeat;
+    padding: 1%;
+    margin-left: 600px;
+    width: 700px;
+    background-size: 100% 100%;
+     -o-background-size: 100% 100%;
+    text-align: center; 
+    font-size: 20px;
+    color: rgb(245, 239, 243);
+    border-style: groove;
+    border-width: 7px;
+    border-color: rgb(245, 240, 244);
+}
+#roses {
+    color: rgb(247, 241, 245);
+    text-shadow: 2px 2px 5px rgb(244, 168, 220);
+}
