@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 import './Compose.css'
+import APIURL from '../helpers/environment';
 
 class PoemsCompose extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class PoemsCompose extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:3000/api/log/`, {
+        fetch(`${APIURL}/api/log/`, {
             method: 'POST',
             body: JSON.stringify({ log: this.state }),
             headers: new Headers({

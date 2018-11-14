@@ -3,6 +3,7 @@ import PoemsCompose from './PoemsCompose';
 import PoemsTable from './PoemsTable';
 import { Container, Row, Col } from 'reactstrap';
 import PoemsEdit from './PoemsEdit';
+import APIURL from '../helpers/environment';
 //import {AuthContext}  from '../auth/AuthContext'
 
 class PoemsIndex extends React.Component {
@@ -16,8 +17,8 @@ class PoemsIndex extends React.Component {
     }
   }
   fetchPoems = () => {
-    console.log('fetching poems');
-    fetch("http://localhost:3000/api/log/", {
+    //console.log('fetching poems');
+    fetch(`${APIURL}/api/log/`, {
       method: 'GET',
       headers: new Headers({
         'Content-Type': 'application/json',
@@ -32,7 +33,7 @@ class PoemsIndex extends React.Component {
   }
 
   poemDelete = (event) => {
-    fetch(`http://localhost:3000/api/log/${event.target.id}`, {
+    fetch(`${APIURL}/api/log/${event.target.id}`, {
       method: 'DELETE',
       body: JSON.stringify({ log: { id: event.target.id } }),
       headers: new Headers({
@@ -45,7 +46,7 @@ class PoemsIndex extends React.Component {
   }
   poemUpdate = (event, poem) => {
     console.log(`${poem.id}`)
-    fetch(`http://localhost:3000/api/log/${poem.id}`, {
+    fetch(`${APIURL}/api/log/${poem.id}`, {
       method: 'PUT',
       body: JSON.stringify({ log: poem }),
       headers: new Headers({
