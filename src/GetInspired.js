@@ -12,13 +12,13 @@ class GetInspired extends Component {
             <div className="poems">
                 <ul className="poems-list">
                     <li><Link to="/poemone">I Carry Your Heart With Me</Link></li>
-                    <br></br>
+                    <br />
                     <li><Link to="/poemtwo">A Dream Within a Dream</Link> </li>
-                    <br></br>
+                    <br />
                     <li><Link to="/poemthree">I Wandered Lonely as a Cloud</Link></li>
-                    <br></br>
+                    <br />
                     <li><Link to="/poemfour">Hope Is The Thing With Feathers</Link></li>
-                    <br></br>
+                    <br />
                     <li><Link to="/poemfive">Blue Roses</Link></li>
                 </ul>
             </div>

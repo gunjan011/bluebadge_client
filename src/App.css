@@ -2,7 +2,7 @@
   background: url(https://images.pexels.com/photos/1526049/pexels-photo-1526049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat fixed top center;
   padding: 0%;
   margin: 0%;
-  height: 1100px;
+  height: 170vh;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -11,6 +11,10 @@
 
 .pages {
   background-color: antiquewhite;
+}
+#logout {
+  background-color: rgb(73, 5, 167);
+  margin-left: 90%;
 }
 
 /*.App-logo {

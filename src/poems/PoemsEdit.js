@@ -46,7 +46,7 @@ class PoemsEdit extends React.Component {
                                 <Label for="compose">Compose</Label>
                                 <Input id="compose" type="text" name="compose" value={this.state.compose} placeholder="compose" onChange={this.handleChange} />
                             </FormGroup>
-                            <Button type="submit" color="primary"> Submit </Button>
+                            <Button id="press"type="submit"> Submit </Button>
                         </Form>
                     </ModalBody>
                 </Modal>

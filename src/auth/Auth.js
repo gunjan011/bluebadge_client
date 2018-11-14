@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Signup from './Signup';
 import Login from './Login';
 import './auth.css'
-//import GetInspired from '/Getinspired';
+//import GetInspired from './Getinspired';
 // import { AuthContext } from './=s/AuthContext';
     
 const Auth = (props) => {

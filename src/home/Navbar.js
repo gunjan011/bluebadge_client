@@ -50,7 +50,7 @@ class NavBar extends React.Component {
                             <NavItem>
                                 <Link id="tips"to="/tips">Some Tips</Link>
                                 <Link id="poems"to="/getinspired">Get Inspired</Link>
-                                <Button id="btn"onClick={() => this.props.clickLogout()}>Logout</Button>
+                                {/*<Button onClick={() => this.props.clickLogout()}>Logout</Button>*/}
                             </NavItem>
                         </Nav>
                     </Collapse>

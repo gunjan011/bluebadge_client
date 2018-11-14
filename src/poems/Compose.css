@@ -1,6 +1,10 @@
-/*.compose-poem {
-    color: white;
-}*/
+.compose-poem {
+    margin-top: 2%;
+}
+
 h5 {
     color: white;
+}
+#button {
+    background-color: rgb(15, 113, 7);
 }

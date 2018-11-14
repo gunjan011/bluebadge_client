@@ -1,6 +1,10 @@
 .table {
     color: navy;
+
 }
 h3 {
     color:white;
+}
+.delete {
+    background-color: rgb(210, 30, 93)
 }

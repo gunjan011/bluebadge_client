@@ -14,6 +14,7 @@ import PoemTwo from "./FamousPoems/PoemTwo";
 import PoemThree from "./FamousPoems/PoemThree";
 import PoemFour from "./FamousPoems/PoemFour";
 import PoemFive from "./FamousPoems/PoemFive";
+import {NavItem, Button} from 'reactstrap';
 import Tips from "./Tips";
 
 class App extends Component {
@@ -51,6 +52,17 @@ class App extends Component {
           <Route path='/' exact>
             <Splash sessionToken={this.state.sessionToken} />
           </Route>
+          <Route path="/tips" exact>
+          <Tips />
+          </Route>
+          <Route path="/getinspired" exact>
+            <GetInspired />
+          </Route>
+          <Route exact path="/poemone"><PoemOne /></Route>
+          <Route exact path="/poemtwo"><PoemTwo /></Route>
+          <Route exact path="/poemthree"><PoemThree /></Route>
+          <Route exact path="/poemfour"><PoemFour /></Route>
+          <Route exact path="/poemfive"><PoemFive /></Route>
         </Switch>
       )
     } else {
@@ -81,6 +93,9 @@ class App extends Component {
         <div className= "App">
           <NavBar clickLogout={this.logout} />
           {this.protectedViews()}
+          
+          <Button id="logout"onClick={this.logout}>Logout</Button>
+          
         </div>
         
       </Router>
