@@ -37,11 +37,11 @@ class Signup extends Component {
                 <Form onSubmit={this.handleSubmit} >
                   <FormGroup>
                         {/*<Label for="username">Username</Label>*/}
-                        <Input id="username" type="text" name="username" placeholder="Username" onChange={this.handleChange} />
+                        <Input id="username" type="text" name="username" placeholder="Username" onChange={this.handleChange} required/>
                     </FormGroup>
                     <FormGroup>
                         {/*<Label for="password">Password</Label>*/}
-                        <Input id="su_password" type="password" name="password" placeholder="Password" onChange={this.handleChange} />
+                        <Input id="su_password" type="password" name="password" placeholder="Password" onChange={this.handleChange} required/>
                     </FormGroup>
                     <Button id="signup"type="submit"> Submit </Button>
                 </Form>

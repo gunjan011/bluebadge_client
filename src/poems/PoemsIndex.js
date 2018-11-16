@@ -27,7 +27,7 @@ class PoemsIndex extends React.Component {
     })
       .then((res) => res.json())
       .then((logData) => {
-        console.log(logData);
+        //console.log(logData);
         return this.setState({ poems: logData.log })
       })
   }
@@ -69,7 +69,7 @@ class PoemsIndex extends React.Component {
     this.fetchPoems()
   }
   render() {
-    const poems = this.state.poems.length >= 1 ?
+  const poems = this.state.poems.length >= 1 ?
       <PoemsTable poems={this.state.poems}
         delete={this.poemDelete} update={this.setUpdatedPoem} /> : <div></div>
     return (
@@ -79,7 +79,7 @@ class PoemsIndex extends React.Component {
             <PoemsCompose token={this.props.token} updatePoemsArray={this.fetchPoems} />
           </Col>
           <Col md="9">
-            {poems}
+           {poems}
           </Col>
         </Row>
         <Col md="12"> {

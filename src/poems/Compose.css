@@ -8,3 +8,8 @@ h5 {
 #button {
     background-color: rgb(15, 113, 7);
 }
+#compose {
+    height: 20vh;
+    width: 20vw;
+    border-radius: 5px;
+}

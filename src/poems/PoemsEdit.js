@@ -31,7 +31,7 @@ class PoemsEdit extends React.Component {
         return (
             <div className='modal'>
                 <Modal isOpen={true} >
-                    <ModalHeader >Compose a poem</ModalHeader>
+                    <ModalHeader><h5 id= "update">Update</h5></ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleSubmit} >
                             {/*<FormGroup>
@@ -39,14 +39,14 @@ class PoemsEdit extends React.Component {
                                 <Input id="id" type="text" name="id" value={this.state.id} placeholder="enter Poem id" onChange={this.handleChange} />
                             </FormGroup>*/}
                             <FormGroup>
-                                <Label for="caption">Caption</Label>
+                            <Label for="caption">Caption</Label>
                                 <Input id="caption" type="text" name="caption" value={this.state.caption} placeholder="enter a caption" onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup>
                                 <Label for="compose">Compose</Label>
-                                <Input id="compose" type="text" name="compose" value={this.state.compose} placeholder="compose" onChange={this.handleChange} />
+                                <Input id="comp" type="text" name="compose" value={this.state.compose} placeholder="compose" onChange={this.handleChange} />
                             </FormGroup>
-                            <Button id="press"type="submit"> Submit </Button>
+                            <Button id="press" type="submit"> Submit </Button>
                         </Form>
                     </ModalBody>
                 </Modal>

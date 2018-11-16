@@ -14,8 +14,9 @@ import PoemTwo from "./FamousPoems/PoemTwo";
 import PoemThree from "./FamousPoems/PoemThree";
 import PoemFour from "./FamousPoems/PoemFour";
 import PoemFive from "./FamousPoems/PoemFive";
-import {NavItem, Button} from 'reactstrap';
+import { Button } from 'reactstrap';
 import Tips from "./Tips";
+//import Login from'./auth/Login';
 
 class App extends Component {
 
@@ -45,25 +46,29 @@ class App extends Component {
     localStorage.clear();
   }
 
+
   protectedViews = () => {
     if (this.state.sessionToken === localStorage.getItem('token')) {
       return (
-        <Switch>
-          <Route path='/' exact>
-            <Splash sessionToken={this.state.sessionToken} />
-          </Route>
-          <Route path="/tips" exact>
-          <Tips />
-          </Route>
-          <Route path="/getinspired" exact>
-            <GetInspired />
-          </Route>
-          <Route exact path="/poemone"><PoemOne /></Route>
-          <Route exact path="/poemtwo"><PoemTwo /></Route>
-          <Route exact path="/poemthree"><PoemThree /></Route>
-          <Route exact path="/poemfour"><PoemFour /></Route>
-          <Route exact path="/poemfive"><PoemFive /></Route>
-        </Switch>
+        <div>
+          <Switch>
+            <Route path='/' exact>
+              <Splash sessionToken={this.state.sessionToken} />
+            </Route>
+            <Route path="/tips" exact>
+              <Tips />
+            </Route>
+            <Route path="/getinspired" exact>
+              <GetInspired />
+            </Route>
+            <Route exact path="/poemone"><PoemOne /></Route>
+            <Route exact path="/poemtwo"><PoemTwo /></Route>
+            <Route exact path="/poemthree"><PoemThree /></Route>
+            <Route exact path="/poemfour"><PoemFour /></Route>
+            <Route exact path="/poemfive"><PoemFive /></Route>
+          </Switch>
+          <Button id="logout" onClick={this.logout}>Logout</Button>
+        </div>
       )
     } else {
       return (
@@ -72,7 +77,7 @@ class App extends Component {
             <Auth setToken={this.setSessionState} />
           </Route>
           <Route path="/tips" exact>
-          <Tips />
+            <Tips />
           </Route>
           <Route path="/getinspired" exact>
             <GetInspired />
@@ -90,14 +95,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className= "App">
+        <div className="App">
           <NavBar clickLogout={this.logout} />
           {this.protectedViews()}
-          
-          <Button id="logout"onClick={this.logout}>Logout</Button>
-          
         </div>
-        
       </Router>
     );
   }

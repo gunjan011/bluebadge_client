@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
 import './Compose.css'
+//import {NavItem, Button} from 'reactstrap';
 import APIURL from '../helpers/environment';
+import NavBar from '../home/Navbar';
 
 class PoemsCompose extends Component {
     constructor(props) {
@@ -46,7 +48,7 @@ class PoemsCompose extends Component {
                 <h5>Compose a poem</h5>
                 <hr />
                 <Form onSubmit={this.handleSubmit} >
-                   {/* <FormGroup>
+                    {/* <FormGroup>
                         <Label for="id">Poem ID</Label>
                         <Input id="id" type="text" name="id" value={this.state.id} placeholder="Id" onChange={this.handleChange} />
                    </FormGroup>*/}
@@ -56,10 +58,12 @@ class PoemsCompose extends Component {
                     </FormGroup>
                     <FormGroup>
                         {/*<Label for="compose">Compose</Label>*/}
-                        <Input id="compose" type="text" name="compose" value={this.state.compose} placeholder="compose" onChange={this.handleChange} />
+                        <textarea id="compose" type="text" name="compose" value={this.state.compose} placeholder="compose" onChange={this.handleChange} />
                     </FormGroup>
-                    <Button id="button"type="submit"> Submit </Button>
-                </Form>
+                    <Button id="button" type="submit"> Submit </Button>
+                    </Form>
+                    {/*<Button id="logout" onClick={this.logout}>Logout</Button>*/}
+
             </div>
         )
     }

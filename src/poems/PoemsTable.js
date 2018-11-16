@@ -25,11 +25,11 @@ const PoemsTable = (props) => {
                             return (
                                 <tr key={id}>
                                     <th scope="row">{poem.id}</th>
-                                    <td>{poem.caption}</td>
+                                    <td id="cap">{poem.caption}</td>
                                     <td>{poem.compose}</td>
                                     <td>
                                         <Button className="delete" id={poem.id} onClick={props.delete}>Delete</Button>|
-                                        <Button id={poem.id} onClick={e => props.update(e, poem)} color="warning">Update</Button>
+                                        <Button className="update"id={poem.id} onClick={e => props.update(e, poem)}>Update</Button>
                                     </td>
                                 </tr>
                             )
